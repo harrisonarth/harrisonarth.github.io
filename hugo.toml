@@ -1,0 +1,18 @@
+baseURL = "https://harrisonarth.com/"
+languageCode = "en-US"
+title = "harrisonarth.com"
+author = "Harrison Arth"
+
+[permalinks]
+  posts = "/:slug/"
+  tags = "/posts/:slug"
+
+[params]
+  dateFormat = "2006-01-02"
+
+[markup]
+  [markup.highlight]
+    style = 'catppuccin-macchiato'
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true

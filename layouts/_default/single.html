@@ -1,0 +1,17 @@
+{{ define "main" }} 
+{{ if eq .Type "posts" }}{{ if not .Params.menu }}
+<h1 style="margin-bottom:0">{{ .Title }}</h1>
+    <time datetime='{{ .Date.Format "2006-01-02" }}'>
+        {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+    </time>
+{{ end }}{{ end }}
+
+<content>
+    {{ .Content }}
+</content>
+<p>
+    {{ range (.GetTerms "tags") }}
+    <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+    {{ end }}
+</p>
+{{ end }}

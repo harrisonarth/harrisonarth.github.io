@@ -1,0 +1,151 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    :root {
+        --width: 720px;
+        --font-main: 'Noto Sans', sans-serif;
+        --font-secondary: 'Noto Sans', sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+        --font-scale: 1em;
+        --background-color: #ffffff;
+        --heading-color: #1d1f21;
+        --text-color: #101010;
+        --link-color: #4271ae;
+        --visited-color: #8959a8;
+        --blockquote-color: #1d1f21;
+    }
+
+    /*dark theme*/
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: #101010; 
+            --heading-color: #fff;       
+            --text-color: #eeeeec;          
+            --link-color: #8aadf4;       
+            --visited-color: #c6a0f6;    
+            --blockquote-color: #eeeeec;    
+        }   
+    }  
+
+    
+    body {
+        font-family: var(--font-secondary); 
+        font-size: var(--font-scale);
+        margin: auto;               
+        padding: 1em;              
+        max-width: var(--width);    
+        text-align: left;
+        background-color: var(--background-color);
+        word-wrap: break-word;      
+        overflow-wrap: break-word;  
+        line-height: 1.5;           
+        color: var(--text-color);
+    }
+
+    /*headings*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-main);
+        color: var(--heading-color);
+    }
+
+    /*links*/
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    nav a {
+        margin-right: .5em;
+    }
+
+    /*misc inline*/
+    strong,
+    b {
+        color: var(--heading-color);
+    }
+
+    button {
+        margin: 0;
+    }
+
+    time {
+        font-family: var(--font-mono);
+        font-style: normal;
+        font-size: 15px;    
+    }
+
+    /*block elements*/
+    blockquote {
+        border-left: 2px solid #999;
+        padding: 0 1em;
+        color: var(--blockquote-color);
+    }
+
+    code {
+        font-family: var(--font-mono);
+        font-size: 90%;
+    }
+
+    code:not(pre > code) {
+        background-color: #24273a;
+        color: #cad3f5;
+        padding: 0 0.2em;
+    }
+
+    footer {
+        padding: 1em 0;
+        opacity: 25%;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px dashed;
+    }
+
+    img {
+        max-width: 100%;
+    }
+    
+    table {
+        width: 100%;
+    }
+
+    /*classes*/
+    .title:hover {
+        text-decoration: none;
+    }
+
+    .inline {
+        width: auto !important;
+    }
+
+    .highlight,
+    .code {
+        overflow-x: auto;
+    }
+
+    /*posts list*/
+    ul.posts {
+        list-style-type: none;
+        padding: unset;
+    }
+
+    ul.posts li {
+        display: flex;
+    }
+
+    ul.posts li span {
+        flex: 0 0 7em;
+    }
+
+    ul.posts li a:visited {
+        color: var(--visited-color);
+    }
+</style>
