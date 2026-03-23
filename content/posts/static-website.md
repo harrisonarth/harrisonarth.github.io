@@ -1,10 +1,10 @@
 +++
-title = "Hosting a Static Site with Hugo and GitHub Pages"
+title = "Hosting a Website with Hugo & GitHub Pages"
 date = 2026-03-23
 tags = ['hugo', 'github', 'web']
 +++
 
-I built this website completely free, with no server to maintain. I only pay the small amount of money to own my own domain name. Everything is hosted as a static page on Github.
+I built this website completely free, with no server to maintain. I only pay the small amount of money to own my own domain name. Everything is hosted as a repo on Github.
 
 ---
 
@@ -23,12 +23,9 @@ A static site is a collection of plain HTML, CSS, and JavaScript files served di
 ---
 
 ### Prerequisites
-
 - [Git](https://git-scm.com) installed locally
 - A [GitHub](https://github.com) account
 - [Hugo](https://gohugo.io/installation/) installed
-
----
 
 ### 1. Create a GitHub Repository
 
